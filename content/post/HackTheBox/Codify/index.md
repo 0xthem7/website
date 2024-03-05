@@ -6,7 +6,7 @@ date : 2024--14 00:00:00+0000
 image : cover.png
 categories :
     - Hack The Box
-    - Sandbox escape, vm2, 
+    - Sandbox, vm2, bash
 tags :
     - writeup
 weight : 1

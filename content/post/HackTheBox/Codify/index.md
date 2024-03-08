@@ -2,7 +2,7 @@
 title : Codify
 description : Linux · Easy
 slug : codify
-date : 2024-14 00:00:00+0000
+date : 2024-3-14 00:00:00+0000
 image : cover.png
 categories :
     - Hack the box

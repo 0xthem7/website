@@ -55,7 +55,7 @@ Content-Type: application/x-php
 
 Notice the **Content-Type: application/x-php** ?
 
-Now see check the response down which I received after sending this request.
+Now let's check the response down which I received after sending this request.
 
 ```
 HTTP/2 500 Internal Server Error
@@ -80,11 +80,11 @@ Cf-Ray: 88af400ed8a54dce-SIN
 Notice the **message** ? It sayes **MimeType or size doesn't match**
 
 As I got this message as the response I update the **Content-Type:**
-Previously **Content-Type: application/x-php**
-Currently  **Content-Type: image/png**
+Previously **Content-Type: application/x-php**  
+Currently  **Content-Type: image/png**  
 ![MimeTypeChange](mime-type-update.png)
 
-I sen't the request and go this beautiful message **{"message":"Profile picture updated"}
+I sent the request and go this beautiful message **{"message":"Profile picture updated"}**
 
 After getting this response I checked the dashboard again and it seems like something worng has happend.
 ![Dashboard](profile-php-loaded.png)
@@ -98,8 +98,8 @@ I visited the decoded url and found out that the server was not running apache s
 
 ## Changes are important
 
-Now as the server is not serving php server I decided to go with basic exploitation such as **.html**
-I followed the same process as above but this time I uploaded .html file.
+Now as the server is not serving php code I decided to go with basic exploitation such as **.html**
+I followed the same process as above but this time I uploaded **.html** file.
 
 
 The request looks like 
@@ -132,7 +132,7 @@ Content-Type: image/png
 ```
 
 ## Exploit
-I sent the requested checked the html code with inspect tool decoded the url and boom .html file was loading without any issue.
+I sent the request and checked the html code with inspect tool decoded the url and boom .html file was loading without any issue.
 
 ![HTMLdeocde](html-url-decode.png)
 ![HTMLRUN](file-uploaded.png)
@@ -142,4 +142,5 @@ And we are able to run our code over the server which opens up the door to run d
 ### How to make file upload secure
 1. Check the extension of the file
 2. Check the diamension of the file 
-3. Don't file to the server withou checking it
+3. Don't upload to the server without checking validating it 
+5. Do not run externally uploaded file on the run

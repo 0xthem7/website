@@ -1,7 +1,7 @@
 ---
 title : The cod caper
 description : Updating the mime type of the file leads to file upload vulnerability
-slug : the-cod-caper
+slug : file-upload-vdp-01
 date : 2024-05-28 00:00:00+0000
 image : cover.png
 categories :

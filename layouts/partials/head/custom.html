@@ -1,0 +1,9 @@
+ <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:url" content="https://himansu.com.np/p/{{ .Slug }}">
+    <meta property="og:description" content="{{ .Description }}">
+    <meta property="og:image" content="https://himansu.com.np/p/{{ .Slug }}{{ .Params.image | relURL }}"> 
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+
+

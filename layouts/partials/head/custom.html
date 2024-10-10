@@ -1,0 +1,7 @@
+     <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:url" content="https://example.com/{{ .Slug }}">
+    <meta property="og:description" content="{{ .Description }}">
+    <meta property="og:image" content="{{ .Params.image | relURL }}"> 
+    <meta property="og:site_name" content="{{ .Site.Title }}">
